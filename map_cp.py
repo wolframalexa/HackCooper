@@ -7,28 +7,20 @@ import plotly.io as pio
 mapbox_access_token = open(".mapbox_token").read()
 
 
-<<<<<<< HEAD
-
-data = pd.read_csv("new.csv")
-=======
 data = pd.read_csv("High-School-Data.csv")
->>>>>>> 634dd2d0b4ad47ca9669189509748493d499b665
+data.dropna(subset=["College Readiness Index"], inplace=True)
+data.to_csv("High-School-Data.csv")
+
 lats = data["Latitude"].tolist()
 longs = data["Longitude"].tolist()
 names = data["School Name"].tolist()
-college_readiness = data["College Readiness Index"].tolist()
 
 fig = go.Figure(px.scatter_mapbox(data,
         lat = "Latitude",
         lon = "Longitude",
 	color = 'Diversity',
-<<<<<<< HEAD
-	size = 'College Readiness Index',
-	color_continuous_scale = px.colors.cyclical.IceFire,
-=======
-	size = 'Total Enrollment',
-	color_continuous_scale = px.colors.sequential.IceFire,
->>>>>>> 634dd2d0b4ad47ca9669189509748493d499b665
+	size = 'College Persistance',
+	color_continuous_scale = px.colors.sequential,
 	size_max = 15,
 	zoom = 10,
         text = "School Name",

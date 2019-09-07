@@ -62,9 +62,9 @@ time, mark, audio, video {
 .container{
   position: absolute;
   width: 41%;
-  height: 76%;
+  height: 88%;
   background: whitesmoke;
-  margin: 6% 5%;
+  margin: 4% 5%;
   border-style: solid;
 
 }
@@ -76,8 +76,7 @@ time, mark, audio, video {
 }
 
 #ismap{
-  right:0;
-  background:#FFE19C;
+  right:0;  
 }
 
 #nycopen{
@@ -87,11 +86,36 @@ time, mark, audio, video {
   position: relative;
   display: block;
 }
+
+#herokulogo{
+  width: 283px;
+  height: 118px;
+  margin: auto;
+  position: relative;
+  display: inline-block;
+}
+
+#reactlogo{
+  width: 151px;
+  height: 108px;
+  margin: auto;
+  position: relative;
+  display: inline-block;
+}
+
+#plotlylogo{
+  width: 118px;
+  height: 108px;
+  margin: auto;
+  position: relative;
+  display: inline-block;
+}
 #title{
       font-family: "Times New Roman", Times, serif;
     font-size: 2em;
-    margin: 2% 0 7%;
+    margin: 6% 0 4%;
 }
+button:focus {outline:0;}
 
 h2{
   margin:2% 0 ;
@@ -113,8 +137,16 @@ h2{
   font-family: "Times New Roman", Times, serif;
   font-size: 2em;
   transition: .2s;
-  margin: 14% 1% 0%;
+  margin: 24% 1% 0%;
 }
+
+.mapbutton{
+  font-size: 2em;
+  transition: .2s;
+  margin: 0% 1% 0%;
+  z-index: 1000;
+}
+
 
 .progressbutton:hover{
  transform: scale(1.1);
@@ -141,4 +173,22 @@ h2{
   height: 100px;
   position: absolute;
 
+}
+
+h2,h3{
+  font-family: "Times New Roman", Times, serif;
+}
+
+h2{
+  font-size:1.9em;
+}
+
+h3{
+  font-size:1.3em;
+  font-weight:lighter;
+}
+
+
+#page5{
+  margin: 4% 0%
 }
