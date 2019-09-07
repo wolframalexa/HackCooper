@@ -9,8 +9,8 @@ class information extends React.Component {
     return (
        <CarouselProvider
         naturalSlideWidth={100}
-        naturalSlideHeight={64}
-        totalSlides={5}
+        naturalSlideHeight={68}
+        totalSlides={6}
         orientation	={"vertical"}
       >
 
@@ -20,6 +20,8 @@ class information extends React.Component {
           <Dot className="dotbutton"slide={2}/>
           <Dot className="dotbutton"slide={3}/>
           <Dot className="dotbutton"slide={4}/>
+          <Dot className="dotbutton"slide={5}/>
+
         </div>
         
         <Slider>
