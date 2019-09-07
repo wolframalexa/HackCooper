@@ -40,24 +40,29 @@ class information extends React.Component {
             
           </Slide>
           <Slide index={2}>
-            <h2><i>We found that high schools that are more racially representative of NYC (50-90% Black and Hispanic) tend to do worse.</i></h2>
+            <h2><i>We found that high schools that are more racially representative of NYC (50-90% Black and Hispanic) are not guaranteed to have higher academic performance.</i></h2>
             <h3>
               This was surprising, seeing as the overwhelming consensus amongst educators is that more diverse environments promote 
-              achievement for students of all backgrounds. This shows that NYC has a long way to go when it comes to serving its "minority" students.
+              achievement for students of all backgrounds. This shows that NYC has a long way to go when it comes to serving its minority students.
            </h3>
           </Slide>
           <Slide index={3}>
             <h2><i>Why is this true?</i></h2>
             <h3>
-              There are multitude of factors that lead to this.
+              There are multitude of factors that lead to this. Based on academic research, Black and Hispanic students are more likely to be economically disadvantaged,
+              as measured by the percentage of students receiving free or reduced-price lunches, students experiencing homelessness, and 
+              family income. They are also more likely to be the first in their family to attend college. All of these metrics correlate to lower
+              college enrollment. Future data exploration would include looking at income levels in addition to diversity metrics.
            </h3>
           </Slide>
           <Slide index={4}>
             <h2><i>How did we build this?</i></h2>
             <h3 id="page5">
-                We decided that for rapid prototyping and ease of access, building an webapp would be the best choice. The code is hosted
-                on heroku, a cloud platform that can host and deploy javascript. The framework we used for building a front-end webpage is 
-                React. The plots are constructed using Plot.ly, an open source python graphing library.
+                We building an webapp hosted on heroku, a cloud platform that can host and deploy Javascript. The framework we used for building a front-end webpage is 
+                React. The plots were constructed using Plot.ly, an open source python graphing library.
+                We used the "2017-18 Diversity Report 9-12 School" from NYC Open Data. We scraped the NYCDOE webpage using a Python 
+                script to retrieve College Readiness Index, Post-Secondary Enrollment after 18 months, and College Persistence. The size of the
+                circle corresponds to the average of these values.
             </h3>
             <img id="reactlogo"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
             <img id="herokulogo" src="https://miro.medium.com/max/3600/1*fIjRtO5P8zc3pjs0E5hYkw.png" />
