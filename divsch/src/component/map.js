@@ -2,12 +2,11 @@ import React from 'react';
 
 class map extends React.Component {
   render() {
-    return (
-      <div id="mapmain">
-        <iframe id="iframe" src="https://plot.ly/~ajakob/2/"></iframe>
-      </div>
-    );
-  }
+    return (<div>
+            <iframe src="./NYCPlot.html"></iframe>
+        </div>
+        );
+    }
 }
 
 export default map;
