@@ -182,11 +182,12 @@ h2{
   width: 20px;
   border-radius: 10px;
   background: black;
+  border: 1px solid black;
   transition:.2s;
 }
 
 .carousel__dot--selected{
-  background: white;
+  background: whitesmoke;
 
 } 
 
