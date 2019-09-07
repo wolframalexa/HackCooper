@@ -61,7 +61,7 @@ class information extends React.Component {
                 React. The plots were constructed using Plot.ly, an open source python graphing library.
                 We used the "2017-18 Diversity Report 9-12 School" from NYC Open Data. We scraped the NYCDOE webpage using a Python 
                 script to retrieve College Readiness Index, Post-Secondary Enrollment after 18 months, and College Persistence. The size of the
-                circle corresponds to the Post-Secondary Enrollment value.
+                circle corresponds to the cube of the Post-Secondary Enrollment value to accentuate the differences.
             </h3>
             <img id="reactlogo"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
             <img id="herokulogo" src="https://miro.medium.com/max/3600/1*fIjRtO5P8zc3pjs0E5hYkw.png" />
