@@ -31,3 +31,33 @@
     transform: rotate(360deg);
   }
 }
+
+#main{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background: whitesmoke;
+  background-size: cover;
+  overflow:none;
+}
+
+.container{
+    position: absolute;
+    width: 42%;
+    height: 100%;
+    background: whitesmoke;
+    margin: 0 4%;
+}
+
+#notmap{
+
+}
+
+#ismap{
+  right:0;
+  background:#FFE19C;
+}
+
+#title{
+  font-size:2em;
+}
