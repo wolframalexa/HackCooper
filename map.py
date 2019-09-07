@@ -37,6 +37,8 @@ fig.update_layout(
         pitch=0,
         zoom=10
     ),
+    width = None,
+    height = None
 )
 pio.write_html(fig, file = "hello_world.html", auto_open=True)
 fig.show()
