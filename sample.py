@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 
-mapbox_access_token = px.set_mapbox_access_token
+mapbox_access_token = open(".mapbox_token").read()
 
 fig = go.Figure(go.Scattermapbox(
         lat=['45.5017'],
@@ -9,7 +9,7 @@ fig = go.Figure(go.Scattermapbox(
         marker=go.scattermapbox.Marker(
             size=14
         ),
-        text=['Montreal'],
+        text=['New York City'],
     ))
 
 fig.update_layout(
