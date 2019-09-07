@@ -14,12 +14,12 @@ class information extends React.Component {
         orientation	={"vertical"}
       >
 
-        <div id="dotcontainer">
-          <Dot slide={0}/>
-          <Dot slide={1}/>
-          <Dot slide={2}/>
-          <Dot slide={3}/>
-          <Dot slide={4}/>
+        <div className="dotcontainer">
+          <Dot className="dotbutton" slide={0}/>
+          <Dot className="dotbutton"slide={1}/>
+          <Dot className="dotbutton"slide={2}/>
+          <Dot className="dotbutton"slide={3}/>
+          <Dot className="dotbutton"slide={4}/>
         </div>
         
         <Slider>
