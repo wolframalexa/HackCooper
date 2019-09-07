@@ -1,24 +1,22 @@
 import plotly.graph_objects as go
-import csv
+import pandas as pd
 
 mapbox_access_token = open(".mapbox_token").read()
 
+text = []
+#file = open("High-School-Data.csv", "r")
+#reader = csv.reader(file)
+data = pd.read_csv("High-School-Data.csv")
+lats = data["Latitute"].tolist()
+longs = data["Longitude"].tolist()
 
 fig = go.Figure(go.Scattermapbox(
-	lat = []
-	lon = []
-	text = []
-	file = open("High-School-Data.csv", "r")
-	reader = csv.reader(file)
-	for idx,line in reader:
-		if idx>0:
-			#READ LATITUDES AND LONGITUDES		        
-			lat.append(line[9])
-			lon.append(line[10])
-	mode='markers',
-	marker=go.scattermapbox.Marker(size=9),
-	for line in reader:
-		text.append(line[2])
+        lat = lats,
+        lon = longs,
+        mode='markers',
+        marker=go.scattermapbox.Marker(size=9),
+        for line in reader:
+                text.append(line[2])
 ))
 
 fig.update_layout(
@@ -36,4 +34,4 @@ fig.update_layout(
     ),
 )
 
-fig.show()
+
