@@ -11,8 +11,13 @@ names = data["School Name"].tolist()
 fig = go.Figure(go.Scattermapbox(
         lat = lats,
         lon = longs,
-        mode='markers',
-        marker=go.scattermapbox.Marker(size=9),
+        mode = 'markers',
+	color = 'Diversity',
+	size = 'Total Enrollment',
+	color_continuous_scale = px.colors.cyclical.IceFire,
+	size_max = 15,
+	zoom = 10,
+        marker = go.scattermapbox.Marker(),
         text = names,
 ))
 
