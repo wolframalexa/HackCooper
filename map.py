@@ -6,7 +6,7 @@ import plotly.io as pio
 
 mapbox_access_token = open(".mapbox_token").read()
 
-data = pd.read_csv("new.csv")
+data = pd.read_csv("High-School-data.csv")
 lats = data["Latitude"].tolist()
 longs = data["Longitude"].tolist()
 names = data["School Name"].tolist()
@@ -16,7 +16,7 @@ fig = go.Figure(px.scatter_mapbox(data,
         lat = "Latitude",
         lon = "Longitude",
 	color = 'Diversity',
-	size = 'Post-Secondary Enrollment (18mo)',
+	size = 'College Readiness',
 	color_continuous_scale = px.colors.sequential.Inferno,
 
 	size_max = 15,
