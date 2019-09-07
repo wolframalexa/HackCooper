@@ -9,7 +9,7 @@ class information extends React.Component {
     return (
        <CarouselProvider
         naturalSlideWidth={100}
-        naturalSlideHeight={54}
+        naturalSlideHeight={64}
         totalSlides={5}
         orientation	={"vertical"}
       >
