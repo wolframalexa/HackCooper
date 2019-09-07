@@ -8,7 +8,7 @@ mapbox_access_token = open(".mapbox_token").read()
 
 
 
-data = pd.read_csv("High-School-Data.csv")
+data = pd.read_csv("new.csv")
 lats = data["Latitude"].tolist()
 longs = data["Longitude"].tolist()
 names = data["School Name"].tolist()
@@ -17,7 +17,7 @@ fig = go.Figure(px.scatter_mapbox(data,
         lat = "Latitude",
         lon = "Longitude",
 	color = 'Diversity',
-	size = 'Total Enrollment',
+	size = 'College Readiness Index',
 	color_continuous_scale = px.colors.cyclical.IceFire,
 	size_max = 15,
 	zoom = 10,
