@@ -4,7 +4,7 @@ import {withRouter, Route, Switch,BrowserRouter as Router} from 'react-router-do
 import map from "./component/map.js"
 import controller from "./component/controller.js"
 import information from "./component/information.js"
-import bg from "./img/bg.jpg"
+
 class App extends Component {
   render(){
     return (
@@ -17,7 +17,7 @@ class App extends Component {
           <Route path="/" component={information} />
           <Route path="/" component={controller} />
         </div>
-        
+
         <div className="container" id="ismap">
               <Route path="/" component={map} />
         </div>
