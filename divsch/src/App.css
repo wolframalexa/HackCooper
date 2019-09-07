@@ -60,15 +60,19 @@ time, mark, audio, video {
 }
 
 .container{
-    position: absolute;
-    width: 42%;
-    height: 100%;
-    background: whitesmoke;
-    margin: 0 5%;
+  position: absolute;
+  width: 41%;
+  height: 76%;
+  background: whitesmoke;
+  margin: 6% 5%;
+  border-style: solid;
+
 }
 
 #notmap{
-    padding: 3% 0;
+    border-left: 2px solid black;
+    padding-left: 2%;
+
 }
 
 #ismap{
@@ -84,9 +88,9 @@ time, mark, audio, video {
   display: block;
 }
 #title{
-  font-family: "Times New Roman", Times, serif;
-  font-size:2.2em;
-  margin:5% 0 ;
+      font-family: "Times New Roman", Times, serif;
+    font-size: 2em;
+    margin: 2% 0 7%;
 }
 
 h2{
@@ -114,4 +118,9 @@ h2{
 
 .progressbutton:hover{
  transform: scale(1.1);
+}
+
+#iframe{
+  width:100%;
+  height:100%;
 }
