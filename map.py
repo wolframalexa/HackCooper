@@ -4,7 +4,7 @@ import pandas as pd
 mapbox_access_token = open(".mapbox_token").read()
 
 data = pd.read_csv("High-School-Data.csv")
-lats = data["Latitute"].tolist()
+lats = data["Latitude"].tolist()
 longs = data["Longitude"].tolist()
 names = data["School Name"].tolist()
 
