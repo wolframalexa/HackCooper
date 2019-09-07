@@ -8,7 +8,6 @@ mapbox_access_token = open(".mapbox_token").read()
 
 
 data = pd.read_csv("High-School-Data.csv")
-data.dropna(subset=["College Readiness Index"], inplace=True)
 data.to_csv("High-School-Data.csv")
 
 lats = data["Latitude"].tolist()
