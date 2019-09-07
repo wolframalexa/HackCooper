@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../css/information.css'
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, Dot,ButtonNext,DotGroup } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 class information extends React.Component {
@@ -13,6 +13,13 @@ class information extends React.Component {
         totalSlides={3}
         orientation	={"vertical"}
       >
+
+        <div id="dotcontainer">
+          <Dot slide={0}/>
+          <Dot slide={1}/>
+          <Dot slide={2}/>
+        </div>
+        
         <Slider>
           <Slide index={0}>  
             <h2>Only 7 Black Students Got Into Stuyvesant, N.Y.’s Most Selective High School, Out of 895 Spots</h2>
