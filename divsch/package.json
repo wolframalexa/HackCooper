@@ -18,6 +18,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
