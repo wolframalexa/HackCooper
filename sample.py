@@ -1,6 +1,7 @@
 import plotly.graph_objects as go
 
-mapbox_access_token = open(".mapbox_token").read()
+mapbox_access_token = layout.mapbox.access_token
+
 
 fig = go.Figure(go.Scattermapbox(
         lat=['45.5017'],
