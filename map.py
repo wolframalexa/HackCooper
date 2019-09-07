@@ -1,9 +1,12 @@
 import plotly.graph_objects as go
-import plotly.express as px
 import pandas as pd
 import plotly.express as px
 
+import plotly.io as pio
+
 mapbox_access_token = open(".mapbox_token").read()
+
+
 
 data = pd.read_csv("High-School-Data.csv")
 lats = data["Latitude"].tolist()
@@ -35,4 +38,5 @@ fig.update_layout(
         zoom=10
     ),
 )
+pio.write_html(fig, file = "hello_world.html", auto_open=True)
 fig.show()
