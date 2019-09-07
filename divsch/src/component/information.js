@@ -38,14 +38,27 @@ class information extends React.Component {
             <img id="nycopen" src="https://data.cityofnewyork.us/api/assets/3FF54443-CD9C-4E56-8A20-8D2BD245BD1A?nyclogo300.png" />
             
           </Slide>
+      
           <Slide index={2}>
+            <h2><i>Our metrics</i></h2>
+              <h3>The New York City Department of Education defines a school that is "racially representative" as a school where
+              Black and Hispanic students make up between 50 and 90% of students. Overall, Black and Hispanic students make up 70% of NYC 
+              public school students. Based on this information, we computed a Diversity Index measuring the difference between the
+              proportions of Black and Hispanics in the NYC public school system in general and at that school. 1 indicates a school that is
+              very racially representative, whereas 0 indicates a school that is completely homogenous.
+              Post-Secondary Enrollment refers to the percentage of students enrolled in a post-secondary institution (2- or 4-year college)
+              18 months after their high school graduation. Its cube corresponds to the size of the circle.
+           </h3>
+            
+          </Slide>
+          <Slide index={3}>
             <h2><i>We found that high schools that are more racially representative of NYC (50-90% Black and Hispanic) are not guaranteed to have higher academic performance.</i></h2>
             <h3>
               This was surprising, seeing as the overwhelming consensus amongst educators is that more diverse environments promote 
               achievement for students of all backgrounds. This shows that NYC has a long way to go when it comes to serving its minority students.
            </h3>
           </Slide>
-          <Slide index={3}>
+          <Slide index={4}>
             <h2><i>Why is this true?</i></h2>
             <h3>
               There are multitude of factors that lead to this. Based on academic research, Black and Hispanic students are more likely to be economically disadvantaged,
@@ -54,7 +67,7 @@ class information extends React.Component {
               college enrollment. Future data exploration would include looking at income levels in addition to diversity metrics to determine a link between socioeconomic status and educational achievment.
            </h3>
           </Slide>
-          <Slide index={4}>
+          <Slide index={5}>
             <h2><i>How did we build this?</i></h2>
             <h3 id="page5">
                 We building an webapp hosted on heroku, a cloud platform that can host and deploy Javascript. The framework we used for building a front-end webpage is 
