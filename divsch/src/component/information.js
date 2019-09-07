@@ -52,7 +52,7 @@ class information extends React.Component {
               There are multitude of factors that lead to this. Based on academic research, Black and Hispanic students are more likely to be economically disadvantaged,
               as measured by the percentage of students receiving free or reduced-price lunches, students experiencing homelessness, and 
               family income. They are also more likely to be the first in their family to attend college. All of these metrics correlate to lower
-              college enrollment. Future data exploration would include looking at income levels in addition to diversity metrics.
+              college enrollment. Future data exploration would include looking at income levels in addition to diversity metrics to determine a link between socioeconomic status and educational achievment.
            </h3>
           </Slide>
           <Slide index={4}>
