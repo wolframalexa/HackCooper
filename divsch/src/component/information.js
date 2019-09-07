@@ -59,7 +59,7 @@ class information extends React.Component {
             <h3 id="page5">
                 We building an webapp hosted on heroku, a cloud platform that can host and deploy Javascript. The framework we used for building a front-end webpage is 
                 React. The plots were constructed using Plot.ly, an open source python graphing library.
-                We used the "2017-18 Diversity Report 9-12 School" from NYC Open Data. We scraped the NYCDOE webpage using a Python 
+                We used the "2017-18 Diversity Report 9-12 School" from NYC Open Data. We scraped the <a href="https://tools.nycenet.edu/dashboard/" alt="">NYCDOE School Performance Dashboard </a> using a Python 
                 script to retrieve College Readiness Index, Post-Secondary Enrollment after 18 months, and College Persistence. The size of the
                 circle corresponds to the cube of the Post-Secondary Enrollment value to accentuate the differences.
             </h3>
