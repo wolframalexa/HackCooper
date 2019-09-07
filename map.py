@@ -1,6 +1,7 @@
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
+import plotly.express as px
 
 mapbox_access_token = open(".mapbox_token").read()
 
@@ -9,17 +10,15 @@ lats = data["Latitude"].tolist()
 longs = data["Longitude"].tolist()
 names = data["School Name"].tolist()
 
-fig = go.Figure(go.Scattermapbox(
-        lat = lats,
-        lon = longs,
-        mode = 'markers',
+fig = go.Figure(px.scatter_mapbox(data,
+        lat = "Latitude",
+        lon = "Longitude",
 	color = 'Diversity',
 	size = 'Total Enrollment',
 	color_continuous_scale = px.colors.cyclical.IceFire,
 	size_max = 15,
 	zoom = 10,
-        marker = go.scattermapbox.Marker(),
-        text = names,
+        text = "School Name",
 ))
 
 fig.update_layout(
@@ -36,5 +35,4 @@ fig.update_layout(
         zoom=10
     ),
 )
-
-
+fig.show()
